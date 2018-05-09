@@ -1,12 +1,10 @@
 import * as PlayerActionTypes from '../actiontypes/player';
 
 export const addPlayer = (name) => {
-
   return{
     type: PlayerActionTypes.ADD_PLAYER,
     name
   };
-
 };
 
 export const removePlayer = (index) => {
@@ -14,7 +12,6 @@ export const removePlayer = (index) => {
     type: PlayerActionTypes.REMOVE_PLAYER,
     index
   }
-
 };
 
 export const updatePlayerScore = (index, score) =>{
