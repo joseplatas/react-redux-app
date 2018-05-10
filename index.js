@@ -6,7 +6,9 @@ import PlayerReducer from './src/reducers/player';
 import Scoreboard from './src/containers/Scoreboard';
 
 const store = createStore(
-  PlayerReducer
+  PlayerReducer,
+  //allow chrome redux devtools to keep track of redux
+  window.devToolsExtension && window.devToolsExtension()
 );
 
 render(
